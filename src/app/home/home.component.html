@@ -1,0 +1,41 @@
+<style>
+    .header {
+        padding: 30px;
+        background-color: #2e88ff;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+    .content{
+        margin: 50px auto;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+    h3{
+        text-transform: capitalize;
+        margin: 0 30px;
+    }
+    p{
+        margin: 0;
+    }
+
+    h1 {
+        padding-right: 50px;
+    }
+</style>
+<div>
+    <div class="header">
+        <h1>Cinta Koding</h1>
+        <h1>Welcome {{username}}</h1>
+    </div>
+    <div  *ngFor="let data of data" class="content">
+        <h3>{{username}}</h3>
+        <p>{{data.title}}</p>
+    </div>
+    <!-- <div *ngFor="let data of data">
+        <h2>{{data.title}}</h2>
+    </div> -->
+</div>
